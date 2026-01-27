@@ -1,0 +1,3 @@
+## 2024-05-22 - Server-side vs Client-side Markdown in Reveal.js
+**Learning:** This Jekyll-based Reveal.js project processes Markdown server-side (using Kramdown) into HTML. However, it was still including `marked.js` and `markdown.js` in the client-side dependencies, which are only needed for client-side parsing (`data-markdown`). This resulted in unnecessary bloat.
+**Action:** When working with hybrid SSG/JS frameworks, always check if client-side libraries are redundant because the work was already done at build time. Verify usage of specific attributes (like `data-markdown`) before removing.
