@@ -7,8 +7,7 @@
 			Reveal.initialize({
 				hash: true,
 				dependencies: [
-					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
+					// marked.js and markdown.js are unnecessary as Jekyll handles Markdown server-side
 					{ src: 'node_modules/reveal.js/plugin/highlight/highlight.js' },
 					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true }
 				]
