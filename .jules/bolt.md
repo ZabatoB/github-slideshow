@@ -1,0 +1,3 @@
+## 2026-02-03 - Reveal.js on Jekyll Architecture
+**Learning:** This Jekyll implementation of Reveal.js renders Markdown server-side using Kramdown (`_config.yml`), rendering client-side libraries `marked.js` and `markdown.js` redundant. Additionally, the CI environment lacks Ruby dependencies to build the site, requiring manual verification of code changes.
+**Action:** Always check `_config.yml` for `markdown` settings in Jekyll sites before assuming client-side rendering is needed. When environment tools fail, rely on strict code inspection and standard web best practices (like CSS ordering).
