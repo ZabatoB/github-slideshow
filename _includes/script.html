@@ -4,11 +4,11 @@
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
+			//
+			// Optimization: Removed marked.js and markdown.js because Markdown is rendered server-side by Jekyll.
 			Reveal.initialize({
 				hash: true,
 				dependencies: [
-					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
 					{ src: 'node_modules/reveal.js/plugin/highlight/highlight.js' },
 					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true }
 				]
